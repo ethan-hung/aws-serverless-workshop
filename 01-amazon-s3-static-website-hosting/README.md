@@ -21,3 +21,4 @@
 ```
 8. Access Static website hosting Endpoint Again
 9. The Website can display normally now
+[](../images/01-03.jpg)
