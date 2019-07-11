@@ -1,4 +1,4 @@
-# Amazon API Gateway
+# HTML call API Gateway
 1. AWS console -> Services -> API Gateway
 2. Click "Create API"
 3. Choose the protocol "REST"
