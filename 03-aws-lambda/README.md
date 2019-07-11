@@ -24,4 +24,4 @@
 14. Click "Create"
 15. Click "Test"
 ![](../images/03-03.jpg)
-12. Create another Lambda function name "aws-serverless-workshop-post"
+16. Create another Lambda function name "aws-serverless-workshop-post"

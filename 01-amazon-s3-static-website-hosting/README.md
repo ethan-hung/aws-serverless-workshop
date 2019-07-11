@@ -10,7 +10,7 @@
 9. Input Error document "error.html"
 10. Click "Save"
 11. Upload files "index.html" & "error.html"
-12. Click "Static website hosting Endpoint:"[Endpoint](http://ecloudvalley-serverless-workshop.s3-website-us-west-2.amazonaws.com/) and you can see http 403 error "AccessDenied"
+12. Click "Static website hosting Endpoint":[Endpoint](http://ecloudvalley-serverless-workshop.s3-website-us-west-2.amazonaws.com/) and you can see http 403 error "AccessDenied"
 ![](../images/01-03.jpg)
 13. Click "Permissions" Tabs
 14. Click "Block public access"
