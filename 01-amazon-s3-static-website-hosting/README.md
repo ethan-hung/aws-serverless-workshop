@@ -1,11 +1,4 @@
-# Amazon Web Service Serverless Workshop
-
-1. [Amazon S3 Static Website Hosting](./01-amazon-s3-static-website-hosting.README.md)
-2. []
-3. []
-4. []
-
-## Amazon S3 Static Website Hosting
+# Amazon S3 Static Website Hosting
 1. AWS console -> Services -> Amazon S3
 2. Create bucket -> Bucket name -> Create
 3. Properties Tabs -> Static website hosting -> Use this bucket to host a website -> Input Index document "index.html" -> Input Error document "error.html" -> Click Save
