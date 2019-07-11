@@ -5,15 +5,15 @@
 ![](../images/03-01.jpg)
 4. Setting Lambda Environment
    * Environment variables
-   * Tags 
+   * Tags
+   * Execution role
+   * Basic settings
+   * Network
+   * Debugging and handling
+   * Concurrency
 ![](../images/03-02.jpg)
 5. Write your Code on Lambda
 6. Click "Save"
-7. 
-
-3. Click Create Role
-4. Choose "AWS Service" -> Click "Lambda" -> Click "Next:Permissions"
-![](../images/02-01.jpg)
-5. Select Policy "AWSLambdaVPCAccessExecutionRole" -> Click "Next:Tags"
-![](../images/02-02.jpg)
-6. Input Role name "aws-lambda-service-role" -> Click "Create role"
+7. Click "Test" -> Create new test event -> Input Event name "demo" -> Create -> Click Test
+![](../images/03-03.jpg)
+8. Create another Lambda function name "aws-serverless-workshop-post"
