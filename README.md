@@ -1,6 +1,6 @@
 # Amazon Web Service Serverless Workshop
 
-1. [Amazon S3 Static Website Hosting](./01-amazon-s3-static-website-hosting.README.md)
+1. [Amazon S3 Static Website Hosting](./01-amazon-s3-static-website-hosting/README.md)
 2. []
 3. []
 4. []
