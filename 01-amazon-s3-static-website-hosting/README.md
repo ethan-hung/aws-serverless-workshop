@@ -1,7 +1,7 @@
 # Amazon S3 Static Website Hosting
 1. AWS console -> Services -> Amazon S3
 2. Click "Create bucket"
-3. Bucket name ""
+3. Bucket name "Take it by yourself"
 4. Click "Create"
 5. Click "Properties" Tabs
 6. Click "Static website hosting"
