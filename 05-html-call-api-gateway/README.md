@@ -30,7 +30,7 @@
 ```html
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 ```
-5. Write some javascript for AJAX
+5. Write some javascript for AJAX(Don't forget to Change the api endpoint!)
 ```javascript
 var click_btn_demo = function(){
     var data = {
@@ -67,3 +67,20 @@ $(document).ready(function(){
     auto_get_data();
 })
 ```
+6. Update file "index.html" on AWS S3
+7. Open Chrome and access the website
+8. Press "F12", open the "DevTools"
+9. You can see some error on DevTools
+![](../images/05-01.jpg)
+![](../images/05-02.jpg)
+10. AWS console -> Services -> API Gateway
+11. Click "Actions"
+12. Click "Enable CORS"
+13. Input Access-Control-Allow-Origin* " '*.s3-website-us-west-2.amazonaws.com' "
+14. Click "Enable CORS and replace existing CORS headers"
+![](../images/05-03.jpg)
+15. Click "Yes,replace existing values"
+![](../images/05-04.jpg)
+16. Now, you can see the website normally
+![](../images/05-05.jpg)
+![](../images/05-06.jpg)
