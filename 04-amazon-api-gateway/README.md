@@ -1,4 +1,5 @@
 # Amazon API Gateway
+
 1. AWS console -> Services -> API Gateway
 2. Click "Create API"
 3. Choose the protocol "REST"
@@ -30,5 +31,12 @@
 ![](../images/04-05.jpg)
 25. You can get the Invoke URL:[URL](https://pj8ep90b5m.execute-api.us-west-2.amazonaws.com/stage/demo-api)
 ![](../images/04-06.jpg)
-26. Now, you can try to access API by Postman
+26. Now, you can try to GET the API by Postman
 ![](../images/04-07.jpg)
+27. Create another Method "POST" and Lambda Function "aws-serverless-workshop-post"
+28. Click "Actions"
+29. Click "Deploy API"
+30. Click "Deploy"
+31. You can try to POST the API by Postman
+![](../images/04-08.jpg)
+![test](./post-demo.json)
