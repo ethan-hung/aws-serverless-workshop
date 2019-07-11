@@ -13,7 +13,7 @@
     5. Click Static website hosting Endpoint -> You can see http 403 error "AccessDenied"
     6. Permissions Tabs -> Block public access -> Edit -> Unclick "Block all public access" -> Click Save
     7. Bucket Policy -> xxxxxx is your bucket name
-        ```Json
+```Json
         {
             "Version": "2012-10-17",
             "Statement": [
@@ -25,5 +25,5 @@
                 }
             ]
         }
-        ```
+```
     8. 
