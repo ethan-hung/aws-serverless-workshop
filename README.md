@@ -5,5 +5,6 @@
 4. [Amazon API Gateway](./04-amazon-api-gateway/README.md)
 5. [HTML call API Gateway](./05-html-call-api-gateway/README.md)
 6. [Lambda connect to Oracle Database (To be continued)]()
-7. [Database connection string on AWS Secrets manager (To be continued)]()
-8. [Analyze AWS Cloudwatch data by AWS X-RAY (To be continued)]()
+7. [Amazon API Gateway Authorizers by AWS Lambda](./07-amazon-api-gateway-authorizers-by-aws-lambda/README.md)
+8. [Database connection string on AWS Secrets manager (To be continued)]()
+9. [Analyze AWS Cloudwatch data by AWS X-RAY (To be continued)]()
