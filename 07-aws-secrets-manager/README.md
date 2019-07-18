@@ -15,8 +15,38 @@
 12. Input Secret name ex. "prod/demo/oracle"
 13. Click "Next"
 14. Click "Store"
+
+## Prepare the AWS Env
+Before you testing the AWS Secrets Manager.You must to check something.
+1. IAM
+2. Network
+### IAM
+1. AWS managed Policy "SecretsManagerReadWrite"
+![](../images/07-02.jpg)
+2. Customer managed Policy
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "secretsmanager:GetSecretValue",
+            "Resource": [
+                "arn:aws:secretsmanager:us-east-1:<aws-id>:secret:<secret-name>"
+            ]
+        }
+    ]
+}
+```
+![](../images/07-03.jpg)
+### Network
+1. NAT Gateway
+2. VPC Endpoint
+![](../images/07-04.jpg)
+
 ## Testing AWS Secrets Manager
-You can copy the Sample code
+You can copy the Sample code for your Lambda
 ```python
 # Use this code snippet in your app.
 # If you need more information about configurations or implementing the sample code, visit the AWS docs:   
