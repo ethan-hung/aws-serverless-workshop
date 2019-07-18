@@ -16,8 +16,8 @@
 13. Click "Next"
 14. Click "Store"
 
-## Prepare the AWS Environment
-Before you testing the AWS Secrets Manager.You must to check something.
+## Prepare AWS Environment
+When you start testing AWS Secrets Manager, you must to check your AWS environment.
 1. IAM
 2. Network
 ### IAM
