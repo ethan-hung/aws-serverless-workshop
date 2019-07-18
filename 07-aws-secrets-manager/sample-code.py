@@ -1,59 +1,16 @@
-# AWS Secrets Manager
-## Create AWS Secrets Manager
-1. AWS console -> Services -> Secrets Manager
-2. Click "Store a new secret"
-3. Select "Credentials for other database"
-![](../images/07-01.jpg)
-4. Input "User name"
-5. Input "Password"
-6. Select AWS KMS encryption key
-7. Select Database Engine "Oracle"
-8. Input "Server address"
-9. Input "Database name"
-10. Input "Port"
-11. Click "Next"
-12. Input Secret name ex. "prod/demo/oracle"
-13. Click "Next"
-14. Click "Store"
-
-## Prepare the AWS Environment
-Before you testing the AWS Secrets Manager.You must to check something.
-1. IAM
-2. Network
-### IAM
-1. AWS managed Policy "SecretsManagerReadWrite"
-![](../images/07-02.jpg)
-2. Customer managed Policy
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": "secretsmanager:GetSecretValue",
-            "Resource": [
-                "arn:aws:secretsmanager:us-east-1:<aws-id>:secret:<secret-name>"
-            ]
-        }
-    ]
-}
-```
-![](../images/07-03.jpg)
-### Network
-1. NAT Gateway
-2. VPC Endpoint
-![](../images/07-04.jpg)
-
-## Test AWS Secrets Manager
-```python
-# Use this code snippet in your app.
-# If you need more information about configurations or implementing the sample code, visit the AWS docs:   
-# https://aws.amazon.com/developers/getting-started/python/
-
+import json
 import boto3
 import base64
 from botocore.exceptions import ClientError
+
+def lambda_handler(event, context):
+    # TODO implement
+
+    result = get_secret()
+    return {
+        'statusCode': 200,
+        'data': json.loads(result)
+    }
 
 
 def get_secret():
@@ -102,10 +59,10 @@ def get_secret():
         # Depending on whether the secret is a string or binary, one of these fields will be populated.
         if 'SecretString' in get_secret_value_response:
             secret = get_secret_value_response['SecretString']
+            return secret
         else:
             decoded_binary_secret = base64.b64decode(get_secret_value_response['SecretBinary'])
+            return decoded_binary_secret
             
     # Your code goes here. 
-```
-The sample code is [here](./sample-code.py).
-![](../images/07-05.jpg)
+    return ""
