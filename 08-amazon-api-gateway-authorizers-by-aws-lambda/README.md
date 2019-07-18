@@ -5,4 +5,4 @@ There are two types of Lambda authorizers:
 2. request parameter-based Lambda authorizer: For WebSocket APIs
 
 ## Lambda Authorizers workflow
-![](../images/07-01.png)
+![](../images/08-01.png)
