@@ -109,3 +109,6 @@ def get_secret():
 ```
 The sample code is [here](./sample-code.py).
 ![](../images/07-05.jpg)
+
+## Combination AWS Lambda connect to oracle database and AWS Secrets Manager
+The sample code is [here](./lambda_function.py)

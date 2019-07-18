@@ -1,7 +1,7 @@
 # AWS Lambda connect to Oracle Database
 ##Prepare
 1. EC2 with Ubuntu 16.04
-2. Download the following files from [github](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
+2. Download the following files from [oracle](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
 * instantclient-basiclite-linux.x64-12.1.0.2.0.zip
 * instantclient-sdk-linux.x64-12.1.0.2.0.zip
 
@@ -26,7 +26,7 @@ cd aws-lambda-python-oracle
 ```
 4. Let create some Lambda code
 ```bash
-rm -y lambda_function.py
+rm lambda_function.py
 vim lambda_function.py
 ```
 lambda_function.py
@@ -78,3 +78,4 @@ make package
 * ORACLE_USER
 * ORACLE_PASSWORD
 8. Crate any test template and click test。
+![](../images/06-01.jpg)
