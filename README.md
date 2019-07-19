@@ -1,4 +1,7 @@
 # Amazon Web Service Serverless Workshop
+## Architecture diagram
+![](../images/00-00.png)
+## Agenda
 1. [Amazon S3 Static Website Hosting](./01-amazon-s3-static-website-hosting/README.md)
 2. [AWS IAM Role](./02-aws-iam-role/README.md)
 3. [AWS Lambda](./03-aws-lambda/README.md)
