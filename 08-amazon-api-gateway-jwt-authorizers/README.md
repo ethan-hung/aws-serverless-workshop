@@ -1,4 +1,4 @@
-# Amazon API Gateway Authorizers by AWS Lambda
+# Amazon API Gateway JWT Authorizers
 
 There are two types of Lambda authorizers:
 1. token-based Lambda authorizer: For JSON Web Token or OAuth token
