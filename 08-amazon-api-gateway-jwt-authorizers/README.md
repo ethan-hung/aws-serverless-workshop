@@ -9,9 +9,9 @@ There are two types of Lambda authorizers:
 
 ## Tutorial
 1. Create "Autherizer" Lambda Function 
-* Function Name "apigw_token_autherizer"
+* Function Name "apigw_token_authorizer"
 * Runtime "Node.js 10.x"
-* Upload Lambda zip "apigw_token_autherizer.zip"
+* Upload Lambda zip "apigw_token_authorizer.zip"
 * Input Environment Variables "JWT_SECRET" "IMP"
 ![](../images/08-02.jpg)
 2. Create "Login" Lambda Function
@@ -19,3 +19,25 @@ There are two types of Lambda authorizers:
 * Runtime "Node.js 10.x"
 * Upload Lambda zip "jwt_login_test.zip"
 * Input Environment Variables "JWT_SECRET" "IMP"
+3. Setting Amazon API Gateway Login
+* Create Resource
+* Path Name "login"
+* Click "OK"
+* Create Method
+* Choose "POST"
+* Input Lambda Function "jwt_login"
+* Click "Save"
+4. Setting Amazon API Gateway Authorizer
+* Click "Authorizers"
+* Click "Create New Authorizer"
+* Input Name "api_authorizer"
+* Input Lambda Function "apigw_token_authorizer"
+* Input Token Source "token"
+* Click "Create"
+![](../images/08-04.jpg)
+* Click API Name
+* Click Method Request
+![](../images/08-05.jpg)
+* Choose Authorization "api_authorizer"
+![](../images/08-06.jpg)
+5. Deploy API
