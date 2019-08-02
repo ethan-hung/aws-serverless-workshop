@@ -49,9 +49,9 @@ There are two types of Lambda authorizers:
 * Input URL
 * Input Body
 * Click Send
-![](../images/08-07.jpg)
 * Copy Login Result body token
-7. Testing Authorizer API
+![](../images/08-07.jpg)
+7. Testing currect Token Authorizer API
 * Create New Request
 * Select HTTP GET
 * Input URL
@@ -59,6 +59,7 @@ There are two types of Lambda authorizers:
 * Input Body
 * Click Send
 ![](../images/08-08.jpg)
+8. Testing Error Token Authorizer API
 * Input error Token
 * Click Send
 ![](../images/08-09.jpg)
