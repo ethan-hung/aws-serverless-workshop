@@ -48,7 +48,23 @@ There are two types of Lambda authorizers:
 * Select HTTP POST
 * Input URL
 * Input Body
+```json
+{
+	"username": "test",
+	"password": "1234"
+}
+```
 * Click Send
+* You can get the API Result
+```json
+{
+    "statusCode": 200,
+    "headers": {
+        "Access-Control-Allow-Origin": "*"
+    },
+    "body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpYXQiOjE1NjQ3MjUyNTIsImV4cCI6MTU2NDcyNTU1Mn0.q8giND7oQW7n9zZdQNDX8zzEsGwsW0Fzufb_bf-Yciw\"}"
+}
+```
 * Copy Login Result body token
 ![](../images/08-07.jpg)
 7. Testing currect Token Authorizer API
@@ -56,7 +72,6 @@ There are two types of Lambda authorizers:
 * Select HTTP GET
 * Input URL
 * Input Header token
-* Input Body
 * Click Send
 ![](../images/08-08.jpg)
 8. Testing Error Token Authorizer API
