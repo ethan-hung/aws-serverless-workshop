@@ -8,6 +8,7 @@ There are two types of Lambda authorizers:
 ![](../images/08-01.png)
 
 ## Tutorial
+![](../images/08-03.jpg)
 1. Create "Autherizer" Lambda Function 
 * Function Name "apigw_token_authorizer"
 * Runtime "Node.js 10.x"
@@ -41,3 +42,23 @@ There are two types of Lambda authorizers:
 * Choose Authorization "api_authorizer"
 ![](../images/08-06.jpg)
 5. Deploy API
+6. Testing Login API
+* Open Postman
+* Create New Request
+* Select HTTP POST
+* Input URL
+* Input Body
+* Click Send
+![](../images/08-07.jpg)
+* Copy Login Result body token
+7. Testing Authorizer API
+* Create New Request
+* Select HTTP GET
+* Input URL
+* Input Header token
+* Input Body
+* Click Send
+![](../images/08-08.jpg)
+* Input error Token
+* Click Send
+![](../images/08-09.jpg)
